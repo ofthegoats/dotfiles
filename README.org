@@ -1,0 +1,3 @@
+#+title: ofthegoats' Dotfiles
+
+Compilation of my scripts, configurations and dotfiles.
