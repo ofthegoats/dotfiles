@@ -1,0 +1,94 @@
+# system information
+ignore "conky (lambek)"
+
+# theme
+fontname IosevkaCurlySlab
+color activeborder yellow
+
+# default applications
+command term kitty
+command lock i3lock
+
+command Firefox firefox
+command Chromium chromium
+command Emacs emacs
+command Zotero zotero
+command LibreOffice libreoffice
+command Thunar thunar
+command Kitty kitty
+command PaVuControl pavucontrol
+
+command "Screen Layout: Laptop Only" /home/piotr/.screenlayout/laptop-only.sh
+
+command "Redden" "redshift -PO 3300"
+command "Unredden" "redshift -x"
+
+# remove unwanted default keybindings
+unbind-key all
+unbind-mouse all
+
+# keybindings
+bind-key 4S-q quit
+bind-key 4S-r restart
+bind-key 4S-Delete lock
+bind-key 4-Return terminal
+bind-key 4-w menu-window
+bind-key 4S-p menu-exec
+bind-key 4-p menu-cmd
+
+bind-key 4-0 group-toggle-all
+
+bind-key 4-Tab window-cycle
+bind-key 4S-Tab window-rcycle
+
+# window-management
+bind-key 4-f window-fullscreen
+bind-key 4-m window-maximize
+bind-key 4-x window-close
+bind-key 4-semicolon window-hide
+
+bind-key 4-Up window-move-up-big
+bind-key 4-Down window-move-down-big
+bind-key 4-Left window-move-left-big
+bind-key 4-Right window-move-right-big
+
+# FIXME something about this feels off...
+bind-key 4-minus window-resize-left
+bind-key 4-underscore window-resize-right
+bind-key 4-equal window-resize-up
+bind-key 4-plus window-resize-down
+
+bind-key 4S-Up window-snap-up
+bind-key 4S-Down window-snap-down
+bind-key 4S-Left window-snap-left
+bind-key 4S-Right window-snap-right
+
+bind-key 4S-0 window-group # toggle group membership
+bind-key 4S-1 window-movetogroup-1
+bind-key 4S-2 window-movetogroup-2
+bind-key 4S-3 window-movetogroup-3
+bind-key 4S-4 window-movetogroup-4
+bind-key 4S-5 window-movetogroup-5
+bind-key 4S-6 window-movetogroup-6
+bind-key 4S-7 window-movetogroup-7
+bind-key 4S-8 window-movetogroup-8
+bind-key 4S-9 window-movetogroup-9
+
+# group-management
+bind-key 4-1 group-toggle-1
+bind-key 4-2 group-toggle-2
+bind-key 4-3 group-toggle-3
+bind-key 4-4 group-toggle-4
+bind-key 4-5 group-toggle-5
+bind-key 4-6 group-toggle-6
+bind-key 4-7 group-toggle-7
+bind-key 4-8 group-toggle-8
+bind-key 4-9 group-toggle-9
+
+# mouse bindings
+bind-mouse 4-1 window-move
+bind-mouse 4-3 window-resize
+bind-mouse 4-2 window-maximize
+bind-mouse 1 menu-cmd
+bind-mouse 3 menu-window
+bind-mouse 2 menu-group
